@@ -1,0 +1,16 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Little Star",
+    "home_page_url": "https://ubdmf.github.io/articles",
+    "description": "好好学习天天向上",
+    "items": [
+        {
+            "id": "https://ubdmf.github.io/articles/article-1",
+            "content_html": "这是一个说明文档",
+            "url": "https://ubdmf.github.io/articles/article-1",
+            "title": "说明文档",
+            "summary": "这是一个说明文档",
+            "date_modified": "2022-08-02T00:00:00.000Z"
+        }
+    ]
+}
