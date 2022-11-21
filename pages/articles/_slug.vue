@@ -48,8 +48,9 @@
               }"
             >
               <a
-                :href="`${decodeURIComponent($route.path)}#${link.id}`"
+                href="javascript:;"
                 class="hover:underline"
+                @click="to(link.id)"
               >
                 {{ link.text }}
               </a>
@@ -129,6 +130,21 @@ export default {
         mainImage: this.article.image,
       }
       return getSiteMeta(metaData)
+    },
+  },
+  methods: {
+    decode(str) {
+      return decodeURIComponent(this.$route.path + '#' + str)
+    },
+    to(id) {
+      const target = document.getElementById(id)
+      let timer = null
+      if (target !== undefined) {
+        timer = setInterval(() => {
+          clearInterval(timer)
+          target.scrollIntoView({ block: 'center' })
+        }, 100)
+      }
     },
   },
 }
