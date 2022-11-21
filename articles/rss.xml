@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Little Star</title>
-        <link>https://ubdmf.github.io/articles</link>
+        <link>https://kyoapps-kyo.github.io//articles</link>
         <description>好好学习天天向上</description>
-        <lastBuildDate>Mon, 21 Nov 2022 19:11:12 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 21 Nov 2022 19:13:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
             <title><![CDATA[说明文档]]></title>
-            <link>https://ubdmf.github.io/articles/article-1</link>
-            <guid>https://ubdmf.github.io/articles/article-1</guid>
+            <link>https://kyoapps-kyo.github.io//articles/article-1</link>
+            <guid>https://kyoapps-kyo.github.io//articles/article-1</guid>
             <pubDate>Tue, 02 Aug 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[这是一个说明文档]]></description>
             <content:encoded><![CDATA[这是一个说明文档]]></content:encoded>
