@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/tags/markdown", (function(a){return {data:[{articlesByTag:[{slug:"article-1",description:"这是一个说明文档",title:a,image:"\u002F_nuxt\u002Fassets\u002Fimgs\u002Fdefault.jpg",tags:[a,"Markdown"],published:"2022-08-02"}]}],fetch:{},mutations:void 0}}("说明文档")));

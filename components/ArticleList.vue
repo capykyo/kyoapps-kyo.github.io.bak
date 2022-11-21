@@ -12,7 +12,7 @@
           :to="{ name: 'articles-slug', params: { slug: article.slug } }"
           class="md:grid md:gap-4 md:grid-cols-2"
         >
-          <img :src="article.image" class="mb-4 border rounded" />
+          <img v-if="article.img" :src="require(article.image)" class="mb-4 border rounded" />
           <div>
             <h2
               class="font-bold text-gray-900 dark:text-gray-300 text-2xl mb-2"

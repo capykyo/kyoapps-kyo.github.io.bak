@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3", (function(a){return {data:[{articlesByTag:[{slug:"article-1",description:"这是一个说明文档",title:a,image:"\u002F_nuxt\u002Fassets\u002Fimgs\u002Fdefault.jpg",tags:[a,"Markdown"],published:"2022-08-02"}]}],fetch:{},mutations:void 0}}("说明文档")));
