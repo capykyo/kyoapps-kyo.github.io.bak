@@ -1,12 +1,12 @@
 <template>
   <div>
     <ul
-      class="text-gray-500 max-w-5xl mx-auto px-4 py-6 rounded-3xl bg-white/80 dark:bg-gray-600/70 blur-md shadow"
+      class="text-gray-500 max-w-5xl mx-auto px-6 py-6 rounded-xl bg-white/80 dark:bg-gray-600/60 blur-md shadow"
     >
       <li
         v-for="article of articles"
         :key="article.slug"
-        class="mb-12 bg-white dark:bg-black/80 p-5 rounded-2xl shadow"
+        class="mb-12 bg-white dark:bg-slate-900/60 p-5 rounded-md shadow"
       >
         <NuxtLink
           :to="{ name: 'articles-slug', params: { slug: article.slug } }"
@@ -24,8 +24,8 @@
               {{ article.title }}
             </h2>
             <p class="text-lg dark:text-gray-400">{{ article.description }}</p>
-            <p class="font-bold text-blue-600 dark:text-indigo-500 mt-2">
-              查看更多<span class="text-indigo-600 dark:text-indigo-500"
+            <p class="font-bold text-blue-600 dark:text-indigo-400 mt-2">
+              查看更多<span class="text-indigo-600 dark:text-indigo-400"
                 >&hellip;</span
               >
             </p>
