@@ -24,6 +24,7 @@ export default {
       (e) => {
         if (!['ul', 'li', 'a'].includes(e.target.tagName.toLowerCase())) {
           this.articles = []
+          this.searchQuery = ''
         }
       },
       false
@@ -48,6 +49,7 @@ export default {
       <li v-for="article of articles" :key="article.slug">
         <NuxtLink
           :to="{ name: 'articles-slug', params: { slug: article.slug } }"
+          class="inline-block w-full"
         >
           {{ article.title.slice(0, 15) }}
         </NuxtLink>

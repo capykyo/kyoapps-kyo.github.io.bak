@@ -1,6 +1,6 @@
 <template>
   <header class="text-gray-100">
-    <div class="fixed top-0 left-0 w-screen z-50 overflow-hidden">
+    <div class="fixed top-0 left-0 w-screen z-50">
       <div class="transition duration-1000 py-2" :class="scrollClass">
         <div class="flex justify-between items-center max-w-5xl mx-auto">
           <h1 class="font-bold">
