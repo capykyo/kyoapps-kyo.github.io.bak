@@ -1,7 +1,7 @@
 ---
 title: 说明文档
 description: '这是一个说明文档'
-image: /_nuxt/assets/imgs/default.jpg
+image: /imgs/default.jpg
 tags: ['说明文档', 'Markdown']
 published: '2022-08-02'
 ---
@@ -75,10 +75,9 @@ _斜体 2_
 
 ## 插入图片
 
-<img-handler src="yellow.webp,default.jpg"></img-handler>
 ![alt](https://res.cloudinary.com/redfern-web/image/upload/v1599840408/redfern-dev/png/nuxt.png)
-<img src="/_nuxt/assets/imgs/default.jpg" class="mx-auto" />
-<img src="/_nuxt/assets/imgs/yellow.webp" class="mx-auto"  />
+<img src="/imgs/default.jpg" class="mx-auto" />
+<img src="/imgs/yellow.webp" class="mx-auto"  />
 
 ## 引用
 

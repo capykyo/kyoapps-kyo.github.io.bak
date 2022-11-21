@@ -36,12 +36,6 @@ export default async ($content, params, error) => {
     return error({ statusCode: 404, message: 'No articles found!' })
   }
 
-  for (const article in allArticles) {
-    if (article.image) {
-      require(article.image)
-    }
-  }
-
   return {
     allArticles,
     paginatedArticles,
