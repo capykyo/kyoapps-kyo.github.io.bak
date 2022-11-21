@@ -1,7 +1,7 @@
 ---
 title: 说明文档
 description: '这是一个说明文档'
-image: ~/assets/imgs/default.jpg
+image: /_nuxt/assets/imgs/default.jpg
 tags: ['说明文档', 'Markdown']
 published: '2022-08-02'
 ---
@@ -75,9 +75,10 @@ _斜体 2_
 
 ## 插入图片
 
-![alt](@/assets/imgs/default.jpg)
+<img-handler src="yellow.webp,default.jpg"></img-handler>
 ![alt](https://res.cloudinary.com/redfern-web/image/upload/v1599840408/redfern-dev/png/nuxt.png)
-<img src="~/assets/imgs/default.jpg"  />
+<img src="/_nuxt/assets/imgs/default.jpg" class="mx-auto" />
+<img src="/_nuxt/assets/imgs/yellow.webp" class="mx-auto"  />
 
 ## 引用
 
@@ -106,3 +107,6 @@ void main(int arg){
 - 月亮<icon name="moon"></icon>
 
 - 文字<text-style size="text-3xl font-bold" color="text-red-500">自定义的文字</text-style>文字
+- [颜色参考连接](https://windicss.org/utilities/general/colors.html)
+- [字体大小](https://windicss.org/utilities/general/typography.html#font-size)
+- [字体宽度](https://windicss.org/utilities/general/typography.html#font-weight)

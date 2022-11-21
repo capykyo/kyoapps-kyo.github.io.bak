@@ -42,7 +42,6 @@ export default {
         setTimeout(() => {
           lock = true
         }, 1000)
-        console.log('helo')
       },
       false
     )
