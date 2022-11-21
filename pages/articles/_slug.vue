@@ -47,9 +47,12 @@
                 'ml-6 pb-1 text-gray-500': link.depth === 5,
               }"
             >
-              <a :href="`#${link.id}`" class="hover:underline">{{
-                link.text
-              }}</a>
+              <a
+                :href="`${decodeURIComponent($route.path)}#${link.id}`"
+                class="hover:underline"
+              >
+                {{ link.text }}
+              </a>
             </li>
           </ul>
         </nav>
