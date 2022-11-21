@@ -10,7 +10,7 @@
     <aside class="right-box hidden md:block">
       <div class="sticky top-20">
         <header class="text-white w-full text-xs mb-2">
-          <div class="p-5 bg-teal-500 dark:bg-violet-900 rounded-md">
+          <div class="p-5 bg-teal-500 dark:bg-violet-800 rounded-md">
             <p>
               <span class="uppercase">发布于:</span>
               <span>{{ article.published }}</span>
