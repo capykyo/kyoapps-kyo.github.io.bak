@@ -9,7 +9,7 @@ export default {
   author: 'WXX',
   twitterHandle: '',
   twitterURL: '',
-  githubURL: 'https://github.com/ubdmf',
+  githubURL: 'https://github.com/kyoapps-kyo',
   siteTitle: 'Little Star',
   siteDesc: '好好学习天天向上',
   mainImage: '',
