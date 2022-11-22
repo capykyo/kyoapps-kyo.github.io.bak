@@ -1,12 +1,10 @@
 <template>
   <div>
-    <div class="flex justify-center">
-      <h2
-        class="text-center text-3xl mb-4 uppercase bg-black text-white inline-block mx-auto px-2"
-      >
-        笔记归类: {{ $route.params.category }}
-      </h2>
-    </div>
+    <h2
+      class="text-left text-xl mb-4 uppercase text-gray-600 max-w-5xl mx-auto px-2"
+    >
+      笔记归类: {{ $route.params.category }}
+    </h2>
     <ArticleList :articles="articlesByCategory" />
   </div>
 </template>
