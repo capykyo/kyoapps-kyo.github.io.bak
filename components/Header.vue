@@ -13,26 +13,24 @@
               <p>{{ siteTitle[1] }}</p>
             </nuxt-link>
           </h1>
-          <div class="flex items-start justify-end md:items-center flex-wrap">
+          <div
+            class="flex items-start justify-end md:items-center flex-wrap md:gap-x-4"
+          >
             <Menu></Menu>
-            <a href="javascript:;" class="hover:no-underline mx-2">
-              <DarkSwitch class="cursor-pointer"></DarkSwitch
-            ></a>
+            <AppSearchInput />
             <a
               href="/articles/rss.xml"
               target="_blank"
-              class="hover:no-underline mx-2"
+              class="hover:no-underline"
             >
               <SvgRSS />
             </a>
-            <a
-              :href="siteGitSrc"
-              target="_blank"
-              class="hover:no-underline mx-2"
-            >
+            <a :href="siteGitSrc" target="_blank" class="hover:no-underline">
               <SvgGithub />
             </a>
-            <AppSearchInput />
+            <a href="javascript:;" class="hover:no-underline">
+              <DarkSwitch class="cursor-pointer"></DarkSwitch
+            ></a>
           </div>
         </div>
       </div>
