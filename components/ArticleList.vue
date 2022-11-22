@@ -6,7 +6,7 @@
       <li
         v-for="article of articles"
         :key="article.slug"
-        class="mb-12 bg-white dark:bg-slate-900/60 p-5 rounded-md shadow"
+        class="mb-12 last:mb-0 bg-white dark:bg-slate-800/50 p-5 rounded-md shadow"
       >
         <NuxtLink
           :to="{ name: 'articles-slug', params: { slug: article.slug } }"
