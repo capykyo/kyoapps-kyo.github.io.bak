@@ -39,7 +39,7 @@ export default {
   },
   head() {
     return {
-      title: 'Article Categories',
+      title: '笔记本',
       link: [
         {
           hid: 'canonical',

@@ -59,7 +59,7 @@ export default {
   },
   head() {
     return {
-      title: 'Article Tags - Learning Laravel and VueJS',
+      title: '标签列表',
       link: [
         {
           hid: 'canonical',

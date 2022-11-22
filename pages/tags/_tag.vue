@@ -32,7 +32,7 @@ export default {
   },
   head() {
     return {
-      title: `Articles Tagged - ${this.captialise(this.$route.params.tag)}`,
+      title: `标签 - ${this.captialise(this.$route.params.tag)}`,
       link: [
         {
           hid: 'canonical',

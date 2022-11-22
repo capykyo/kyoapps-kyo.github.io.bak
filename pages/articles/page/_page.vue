@@ -26,7 +26,7 @@ export default {
   },
   head() {
     return {
-      title: `Articles Page ${this.$route.params.page} - 好好学习天天向上`,
+      title: `笔记页 ${this.$route.params.page}`,
       link: [
         {
           hid: 'canonical',
