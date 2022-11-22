@@ -1,5 +1,5 @@
 <template>
-  <div id="mode-switch">
+  <div id="mode-switch relative z-[9999]" ref="modes">
     <transition name="fade" mode="out-in">
       <component :is="iconName" icon-style="w-6 h-6"></component>
     </transition>
@@ -25,10 +25,10 @@ export default {
     this.name = window.matchMedia('(prefers-color-scheme: dark)').matches
       ? 'sun'
       : 'moon'
-    const modeSwitch = document.getElementById('mode-switch')
+    const modeSwitch = this.$refs.modes
     let lock = true
     modeSwitch.addEventListener(
-      'click',
+      'pointerdown',
       () => {
         if (!lock) return
         if (this.name === 'sun') {
