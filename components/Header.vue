@@ -35,7 +35,7 @@
           <div class="pr-4 md:hidden" @click="toggle()">
             <icon
               name="xingqiu"
-              class="transition hover:scale-105 duration-500"
+              class="transition hover:scale-105 duration-500 dark:opacity-80"
             ></icon>
           </div>
           <div
