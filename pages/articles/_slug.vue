@@ -10,7 +10,7 @@
     <aside class="right-box hidden md:block">
       <div class="sticky top-20">
         <header class="text-white w-full text-xs mb-2">
-          <div class="p-5 bg-teal-500 dark:bg-violet-800 rounded-md">
+          <div class="p-5 bg-teal-500 dark:bg-violet-900 rounded-md">
             <p class="mb-2">
               <span class="uppercase">标题:</span>
               <span>{{ article.title }}</span>
