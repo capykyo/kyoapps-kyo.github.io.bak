@@ -14,6 +14,7 @@
             </nuxt-link>
           </h1>
           <div class="flex items-start justify-end md:items-center flex-wrap">
+            <Menu></Menu>
             <a href="javascript:;" class="hover:no-underline mx-2">
               <DarkSwitch class="cursor-pointer"></DarkSwitch
             ></a>
