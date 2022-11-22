@@ -15,6 +15,17 @@
               <span class="uppercase">标题:</span>
               <span>{{ article.title }}</span>
             </p>
+            <p class="mb-2">
+              <span class="uppercase">归属于:</span>
+              <nuxt-link
+                :to="{
+                  name: 'categories-category',
+                  params: { category: article.category.toLowerCase() },
+                }"
+                class="hover:underline"
+                >{{ article.category }}</nuxt-link
+              >
+            </p>
             <div class="flex mb-2">
               <p class="mr-1 uppercase flex-shrink-0">标签:</p>
               <ul class="flex flex-wrap">
