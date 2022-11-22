@@ -1,12 +1,10 @@
 <template>
   <div>
-    <div class="flex justify-center">
-      <h2
-        class="text-center text-3xl mb-4 uppercase bg-black text-white inline-block mx-auto px-2"
-      >
-        Tag: {{ $route.params.tag }}
-      </h2>
-    </div>
+    <h2
+      class="text-left text-xl mb-4 px-2 text-gray-500 dark:text-gray-300 max-w-5xl mx-auto"
+    >
+      标签: {{ $route.params.tag }}
+    </h2>
     <ArticleList :articles="articlesByTag" />
   </div>
 </template>
