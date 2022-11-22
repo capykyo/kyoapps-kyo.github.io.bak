@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center md:gap-x-8 max-w-5xl mx-auto">
-    <article class="w-max-3xl">
+    <article class="w-max-4xl">
       <div
         class="prose md:prose-lg w-full dark:bg-gray-800 dark:text-gray-200 text-gray-500 bg-white p-5 rounded-xl shadow"
       >
@@ -11,13 +11,13 @@
       <div class="sticky top-20">
         <header class="text-white w-full text-xs mb-2">
           <div class="p-5 bg-teal-500 dark:bg-violet-800 rounded-md">
-            <p>
-              <span class="uppercase">发布于:</span>
-              <span>{{ article.published }}</span>
+            <p class="mb-2">
+              <span class="uppercase">标题:</span>
+              <span>{{ article.title }}</span>
             </p>
-            <div class="flex mt-1">
-              <span class="mr-1 uppercase">标签:</span>
-              <ul class="flex">
+            <div class="flex mb-2">
+              <p class="mr-1 uppercase flex-shrink-0">标签:</p>
+              <ul class="flex flex-wrap">
                 <li v-for="tag in article.tags" :key="tag" class="mr-2">
                   <nuxt-link
                     :to="{
@@ -31,20 +31,24 @@
                 </li>
               </ul>
             </div>
+            <p class="">
+              <span class="uppercase">发布于:</span>
+              <span>{{ article.published }}</span>
+            </p>
           </div>
         </header>
         <nav
-          class="mt-6 p-5 bg-white rounded-lg shadow w-max-[300px] dark:bg-gray-900 dark:text-gray-200"
+          class="mt-6 p-5 bg-white rounded-lg shadow dark:bg-gray-900 dark:text-gray-200"
         >
           <ul>
             <li
               v-for="link of article.toc"
               :key="link.id"
               :class="{
-                'py-2 ': link.depth === 2,
-                'ml-3 pb-1 text-gray-400': link.depth === 3,
-                'ml-5 pb-1 text-gray-500': link.depth === 4,
-                'ml-6 pb-1 text-gray-500': link.depth === 5,
+                'py-2 text-lg': link.depth === 2,
+                'ml-3 pb-1 text-gray-400 text-base': link.depth === 3,
+                'ml-5 pb-1 text-gray-500 text-sm': link.depth === 4,
+                'ml-6 pb-1 text-gray-500 text-sm': link.depth === 5,
               }"
             >
               <a
