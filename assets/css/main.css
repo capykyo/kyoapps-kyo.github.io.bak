@@ -35,3 +35,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+.nuxt-link-exact-active,
+.nuxt-link-active {
+  color: #fff;
+}
