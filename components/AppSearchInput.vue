@@ -40,7 +40,7 @@ export default {
       type="search"
       autocomplete="off"
       placeholder="搜索笔记"
-      class="w-[200px] h-[30px] rounded-lg pl-4 shadow pr-2 text-gray-500 dark:text-gray-500 dark:bg-gray-300"
+      class="w-[200px] h-[20px] rounded pl-4 shadow pr-2 text-gray-500 dark:text-gray-500 dark:bg-gray-300 text-sm outline-none mb-1"
     />
     <ul
       v-if="articles.length"
