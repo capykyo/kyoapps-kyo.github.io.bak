@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import ArticleList from '@/components/ArticleList';
+import ArticleList from '@/components/ArticleList'
 
 export default {
   name: 'TagPage',
@@ -23,19 +23,14 @@ export default {
     const articles = await $content('articles')
       .only(['title', 'description', 'image', 'slug', 'published', 'tags'])
       .sortBy('published', 'desc')
-      .fetch();
+      .fetch()
     const articlesByTag = articles.filter((article) => {
-      const articleTags = article.tags.map((x) => x.toLowerCase());
-      return articleTags.includes(params.tag);
-    });
+      const articleTags = article.tags.map((x) => x.toLowerCase())
+      return articleTags.includes(params.tag)
+    })
     return {
       articlesByTag,
-    };
-  },
-  methods: {
-    captialise(text) {
-      return text.charAt(0).toUpperCase() + text.slice(1);
-    },
+    }
   },
   head() {
     return {
@@ -47,7 +42,12 @@ export default {
           href: `${this.$config.baseUrl}/tags/${this.$route.params.tag}`,
         },
       ],
-    };
+    }
   },
-};
+  methods: {
+    captialise(text) {
+      return text.charAt(0).toUpperCase() + text.slice(1)
+    },
+  },
+}
 </script>

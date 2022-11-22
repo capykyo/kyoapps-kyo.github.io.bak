@@ -2,7 +2,19 @@
 title: 说明文档
 description: '这是一个说明文档'
 image: /imgs/default.jpg
-tags: ['说明文档', 'Markdown']
+tags:
+  [
+    '说明文档',
+    'Markdown',
+    'cpp',
+    'js',
+    '雷达',
+    '开车',
+    '太阳',
+    '月亮',
+    '游泳',
+    '711',
+  ]
 published: '2022-08-02'
 ---
 
